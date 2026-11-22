@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FabaCare | Faba Bean Disease Detection</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">🌱 FabaCare</div>
+        <span class="tagline">Smart Faba Bean Disease Detection</span>
+    </header>
+
+    <main class="container">
+
+        <section class="hero">
+            <p class="eyebrow">AI-POWERED PLANT HEALTH</p>
+            <h1>Keep Your Faba Beans <span>Healthy.</span></h1>
+            <p class="subtitle">
+                Upload a leaf image and let our AI model identify
+                possible diseases in seconds.
+            </p>
+        </section>
+
+        <!-- UPLOAD SECTION -->
+        <section class="upload-card">
+            <h2>Analyze Your Leaf</h2>
+            <p class="description">
+                Choose a clear image of a faba bean leaf.
+            </p>
+
+            <label for="imageInput" class="upload-area" id="uploadArea">
+                <div class="upload-icon">📷</div>
+                <h3>Upload a leaf image</h3>
+                <p>Click here or drag and drop your image</p>
+                <span>JPG, PNG or WEBP</span>
+            </label>
+
+            <input
+                type="file"
+                id="imageInput"
+                accept="image/png,image/jpeg,image/webp"
+                hidden
+            >
+
+            <div class="preview-container" id="previewContainer" hidden>
+                <img id="imagePreview" alt="Selected faba bean leaf">
+                <button id="removeImage" class="remove-button" type="button">
+                    Remove image
+                </button>
+            </div>
+
+            <button id="analyzeButton" class="analyze-button" disabled>
+                Analyze Image
+            </button>
+
+            <p id="statusMessage" class="status-message"></p>
+        </section>
+
+        <!-- DIAGNOSIS SECTION -->
+        <section class="result-card" id="resultCard" hidden>
+
+            <h2>Diagnosis Result</h2>
+
+            <p id="totalLeaves" class="total-leaves"></p>
+
+            <!-- MAIN DIAGNOSIS -->
+            <div class="result-main">
+                <span class="result-label">Predicted Class</span>
+                <h3 id="prediction"></h3>
+                <p id="confidence"></p>
+            </div>
+
+            <div id="warningMessage" class="warning-message" hidden>
+                The prediction is uncertain. Try uploading a clearer leaf image.
+            </div>
+
+            <!-- SECOND PREDICTION -->
+            <div class="second-result">
+                <span>Second possible class</span>
+                <strong id="secondPrediction"></strong>
+            </div>
+
+            <!-- SAM SEGMENTATION IMAGE -->
+            <div id="segmentationSection" class="segmentation-section" hidden>
+                <h3>Segmentation Result</h3>
+                <p class="description">
+                    SAM detected leaf regions in your uploaded image.
+                </p>
+
+                <img
+                    id="segmentedImage"
+                    class="segmented-image"
+                    alt="SAM segmentation result"
+                >
+            </div>
+
+            <!-- INDIVIDUAL LEAF DIAGNOSES -->
+            <div id="leafResultsSection" class="leaf-results-section" hidden>
+                <h3>Individual Leaf Diagnoses</h3>
+                <p class="description">
+                    Classification results for each detected leaf.
+                </p>
+
+                <div id="leafResults" class="leaf-results-grid"></div>
+            </div>
+
+            <button id="resetButton" class="reset-button" type="button">
+                Analyze Another Image
+            </button>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>FabaCare © 2026 | AI-Based Faba Bean Leaf Diagnosis</p>
+    </footer>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>

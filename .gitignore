@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+
+# Local tooling and generated outputs
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.log
+
+# Keep model checkpoints under Git LFS; ignore accidental model copies
+*.pth
+!models/faba_best.pth
+!models/sam_vit_b_01ec64.pth
