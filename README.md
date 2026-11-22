@@ -42,7 +42,7 @@ Both files are tracked with Git LFS. A Git LFS quota or bandwidth limit on the G
 
 ## Project tasks
 
-The next-week plan from the progress report is tracked in the [Next-week plan milestone](https://github.com/youssefzaher612/PlantAI/milestone/1) and mirrored in [TASKS.md](TASKS.md). It covers segmentation refinement, individual-leaf presentation, the proposed corn integration, and conditional integration testing.
+The next-week plan from the progress report is tracked in the [PlantAI weekly task board](https://github.com/users/youssefzaher612/projects/5), grouped under the [Next-week plan milestone](https://github.com/youssefzaher612/PlantAI/milestone/1), and mirrored in [TASKS.md](TASKS.md). It covers segmentation refinement, individual-leaf presentation, the proposed corn integration, and conditional integration testing.
 
 ## Notes
 

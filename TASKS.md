@@ -1,6 +1,6 @@
 # PlantAI task plan
 
-These tasks come from the weekly progress report and are tracked in the private GitHub repository's [Next-week plan milestone](https://github.com/youssefzaher612/PlantAI/milestone/1).
+These tasks come from the weekly progress report and are tracked on the private GitHub [PlantAI weekly task board](https://github.com/users/youssefzaher612/projects/5), under the [Next-week plan milestone](https://github.com/youssefzaher612/PlantAI/milestone/1).
 
 ## Planned work
 
