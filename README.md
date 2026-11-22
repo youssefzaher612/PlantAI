@@ -1,6 +1,6 @@
-# FabaCare
+# PlantAI
 
-FabaCare is a web application for detecting faba bean leaf diseases. A FastAPI backend uses a trained ResNet18 classifier and Segment Anything (SAM, ViT-B) to segment candidate leaf regions before classification. The frontend supports image upload and displays diagnosis, confidence, alternative predictions, and segmentation results.
+This repository contains FabaCare, a web application for detecting faba bean leaf diseases. A FastAPI backend uses a trained ResNet18 classifier and Segment Anything (SAM, ViT-B) to segment candidate leaf regions before classification. The frontend supports image upload and displays diagnosis, confidence, alternative predictions, and segmentation results.
 
 ## Current status
 
