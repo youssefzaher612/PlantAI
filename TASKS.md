@@ -1,27 +1,18 @@
-# FabaCare task plan
+# PlantAI task plan
 
-Tasks below are planned from the weekly progress report. Corn integration is exploratory and depends on the colleague's module being available and its interface being compatible.
+These tasks come from the weekly progress report and are tracked in the private GitHub repository's [Next-week plan milestone](https://github.com/youssefzaher612/PlantAI/milestone/1).
 
-## Next up
+## Planned work
 
-- [ ] **Evaluate and refine SAM segmentation**
-  - Check representative single-leaf and multi-leaf images.
-  - Investigate fragmented masks, duplicate regions, incomplete boundaries, and background inclusion.
-  - Record findings and adjust filtering/selection as evidence supports.
-- [ ] **Improve individual-leaf result presentation**
-  - Review extracted leaf crops and diagnosis cards.
-  - Make individual detections easier to inspect while retaining the original-image segmentation preview.
-- [ ] **Explore corn module integration with colleague**
-  - Confirm module readiness and available inference interface.
-  - Agree on crop selection and how uploads route to the faba bean or corn pipeline.
-- [ ] **Define the shared website and API workflow**
-  - Document common input/output formats and endpoint requirements.
-  - Keep each crop's model and prediction logic separate behind the shared experience.
-- [ ] **Run conditional integration tests**
-  - Start only if both modules are ready and interfaces are compatible.
-  - Test sample faba bean and corn images and document issues.
+- [ ] [#1 Evaluate and refine SAM leaf segmentation](https://github.com/youssefzaher612/PlantAI/issues/1)
+- [ ] [#2 Improve individual-leaf result presentation](https://github.com/youssefzaher612/PlantAI/issues/2)
+- [ ] [#3 Explore corn module integration with colleague](https://github.com/youssefzaher612/PlantAI/issues/3)
+- [ ] [#4 Define shared website and API workflow](https://github.com/youssefzaher612/PlantAI/issues/4)
+- [ ] [#5 Run conditional faba bean and corn integration tests](https://github.com/youssefzaher612/PlantAI/issues/5)
 
-## Done this week (from the report)
+Corn integration and its tests depend on the colleague's module being available and compatible. Testing should begin only after that dependency is met.
+
+## Completed this week (as reported)
 
 - ResNet18 inference integrated into FastAPI for four faba bean classes.
 - SAM ViT-B candidate segmentation connected to the image workflow.
